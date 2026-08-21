@@ -16,13 +16,13 @@
         extend: {
           colors: {
             oni: {
-              pink: '#FF6B8B',
-              blush: '#FF9BB0',
-              soft: '#FFE4EC',
-              cream: '#FFF8FA',
-              red: '#E63946',
-              ink: '#1A1A1A',
-              mist: '#FFF0F4',
+              gold: '#D79B1F',
+              honey: '#E5AE37',
+              cream: '#F6E2BD',
+              butter: '#FFF6D9',
+              wheat: '#FAEDD0',
+              collar: '#CC6732',
+              ink: '#2A1E0C',
             }
           },
           fontFamily: {
@@ -30,9 +30,9 @@
             body: ['Fredoka', 'sans-serif'],
           },
           boxShadow: {
-            pop: '4px 4px 0 #1A1A1A',
-            'pop-lg': '6px 6px 0 #1A1A1A',
-            pink: '4px 4px 0 #FF6B8B',
+            pop: '4px 4px 0 #2A1E0C',
+            'pop-lg': '6px 6px 0 #2A1E0C',
+            gold: '4px 4px 0 #D79B1F',
           },
           animation: {
             float: 'float 3.5s ease-in-out infinite',
@@ -70,24 +70,24 @@
 
     body {
       font-family: 'Fredoka', sans-serif;
-      background-color: #FF9BB0;
+      background-color: #F6E2BD;
       overflow-x: hidden;
     }
 
     .checkered {
       background-image:
-        linear-gradient(45deg, #E63946 25%, transparent 25%),
-        linear-gradient(-45deg, #E63946 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, #E63946 75%),
-        linear-gradient(-45deg, transparent 75%, #E63946 75%);
+        linear-gradient(45deg, #CC6732 25%, transparent 25%),
+        linear-gradient(-45deg, #CC6732 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #CC6732 75%),
+        linear-gradient(-45deg, transparent 75%, #CC6732 75%);
       background-size: 16px 16px;
       background-position: 0 0, 0 8px, 8px -8px, -8px 0;
       background-color: #fff;
     }
 
     .paw-bg {
-      background-color: #FF9BB0;
-      background-image: radial-gradient(#FF6B8B 1.2px, transparent 1.2px);
+      background-color: #F6E2BD;
+      background-image: radial-gradient(#D79B1F 1.2px, transparent 1.2px);
       background-size: 28px 28px;
     }
 
@@ -96,12 +96,12 @@
     }
 
     .stroke-text {
-      -webkit-text-stroke: 2px #1A1A1A;
+      -webkit-text-stroke: 2px #2A1E0C;
       paint-order: stroke fill;
     }
 
     .comic-border {
-      border: 3px solid #1A1A1A;
+      border: 3px solid #2A1E0C;
     }
 
     #cat-cursor {
@@ -163,16 +163,16 @@
   <div class="paw-trail" id="paw-3" aria-hidden="true">🐾</div>
 
   <!-- Nav -->
-  <nav class="fixed top-0 inset-x-0 z-50 bg-oni-blush/95 backdrop-blur-md border-b-[3px] border-oni-ink">
+  <nav class="fixed top-0 inset-x-0 z-50 bg-oni-cream/95 backdrop-blur-md border-b-[3px] border-oni-ink">
     <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="#top" class="flex items-center gap-2 group">
         <img src="logo.png" alt="Onigiri logo" class="w-10 h-10 rounded-full comic-border object-cover group-hover:scale-110 transition-transform" />
-        <span class="font-display text-2xl text-oni-pink stroke-text tracking-wide">Onigiri</span>
+        <span class="font-display text-2xl text-oni-gold stroke-text tracking-wide">Onigiri</span>
       </a>
       <div class="hidden sm:flex items-center gap-6 font-body font-medium text-sm">
-        <a href="#about" class="hover:text-oni-pink transition-colors">About</a>
-        <a href="#howto" class="hover:text-oni-pink transition-colors">How to Buy</a>
-        <a href="#chart" class="hover:text-oni-pink transition-colors">Chart</a>
+        <a href="#about" class="hover:text-oni-gold transition-colors">About</a>
+        <a href="#howto" class="hover:text-oni-gold transition-colors">How to Buy</a>
+        <a href="#chart" class="hover:text-oni-gold transition-colors">Chart</a>
       </div>
       <div class="flex items-center gap-2">
         <a href="https://t.me/Onigiricoin_sol" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full comic-border overflow-hidden hover:-translate-y-0.5 transition-transform shadow-pop bg-white">
@@ -187,22 +187,22 @@
 
   <!-- Hero -->
   <header id="top" class="relative min-h-screen pt-16 overflow-hidden paw-bg">
-    <div class="absolute -top-20 -right-20 w-72 h-72 bg-oni-pink/30 blob animate-float"></div>
-    <div class="absolute bottom-10 -left-16 w-56 h-56 bg-oni-blush/40 blob animate-float" style="animation-delay: -1.5s"></div>
+    <div class="absolute -top-20 -right-20 w-72 h-72 bg-oni-gold/30 blob animate-float"></div>
+    <div class="absolute bottom-10 -left-16 w-56 h-56 bg-oni-honey/40 blob animate-float" style="animation-delay: -1.5s"></div>
     <span class="absolute top-28 left-[8%] text-3xl animate-sparkle" aria-hidden="true">✨</span>
-    <span class="absolute top-40 right-[12%] text-2xl animate-sparkle" style="animation-delay: 0.6s" aria-hidden="true">💗</span>
+    <span class="absolute top-40 right-[12%] text-2xl animate-sparkle" style="animation-delay: 0.6s" aria-hidden="true">💛</span>
     <span class="absolute bottom-32 right-[20%] text-4xl animate-bounce-soft" aria-hidden="true">🐾</span>
 
     <div class="relative max-w-6xl mx-auto px-4 py-10 md:py-14 flex flex-col items-center text-center">
-      <div class="w-full max-w-5xl bg-oni-blush p-3 md:p-4 comic-border shadow-pop-lg rounded-3xl">
+      <div class="w-full max-w-5xl bg-oni-gold p-3 md:p-4 comic-border shadow-pop-lg rounded-3xl">
         <img
           src="banner.png"
-          alt="Onigiri banner — tuxedo cat with pink Onigiri lettering"
+          alt="Onigiri banner — tuxedo cat with gold Onigiri lettering"
           class="w-full rounded-2xl object-cover animate-wiggle"
         />
       </div>
 
-      <h1 class="mt-8 font-display text-5xl sm:text-7xl md:text-8xl text-oni-pink stroke-text leading-none">
+      <h1 class="mt-8 font-display text-5xl sm:text-7xl md:text-8xl text-oni-gold stroke-text leading-none">
         Onigiri
       </h1>
       <p class="mt-2 font-body text-lg sm:text-xl text-oni-ink font-medium">
@@ -214,18 +214,18 @@
 
       <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
         <a
-          href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA"
+          href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=5uVwVUvzXsYP9Cc1sjRgVJE1zX3xfi3pArJNg9RNpump"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-8 py-3.5 bg-oni-pink text-white font-display text-xl comic-border shadow-pop hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
+          class="inline-flex items-center gap-2 px-8 py-3.5 bg-oni-gold text-oni-ink font-display text-xl comic-border shadow-pop hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
         >
           Buy Now 🍙
         </a>
         <a
-          href="https://dexscreener.com/solana/TBA"
+          href="https://dexscreener.com/solana/5uVwVUvzXsYP9Cc1sjRgVJE1zX3xfi3pArJNg9RNpump"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-oni-ink font-display text-xl comic-border shadow-pink hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
+          class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-oni-ink font-display text-xl comic-border shadow-gold hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
         >
           Chart 📊
         </a>
@@ -234,23 +234,23 @@
       <!-- CA copy -->
       <div class="mt-8 w-full max-w-xl">
         <div class="comic-border bg-white shadow-pop rounded-2xl px-4 py-3 flex flex-col sm:flex-row items-center gap-3">
-          <span class="font-display text-oni-pink text-sm shrink-0">CA</span>
-          <code id="ca-address" class="flex-1 text-xs sm:text-sm font-mono text-oni-ink break-all text-center sm:text-left select-all">TBA</code>
+          <span class="font-display text-oni-gold text-sm shrink-0">CA</span>
+          <code id="ca-address" class="flex-1 text-xs sm:text-sm font-mono text-oni-ink break-all text-center sm:text-left select-all">5uVwVUvzXsYP9Cc1sjRgVJE1zX3xfi3pArJNg9RNpump</code>
           <button
             id="copy-ca"
             type="button"
-            class="shrink-0 px-4 py-2 bg-white text-oni-ink font-body font-semibold text-sm comic-border shadow-pink hover:bg-oni-soft transition-colors"
+            class="shrink-0 px-4 py-2 bg-white text-oni-ink font-body font-semibold text-sm comic-border shadow-gold hover:bg-oni-butter transition-colors"
           >
             Copy CA
           </button>
         </div>
-        <p id="copy-toast" class="mt-2 text-sm text-oni-pink font-medium opacity-0 transition-opacity">Copied! 🐾</p>
+        <p id="copy-toast" class="mt-2 text-sm text-oni-gold font-medium opacity-0 transition-opacity">Copied! 🐾</p>
       </div>
     </div>
 
     <!-- Marquee ticker -->
-    <div class="border-y-[3px] border-oni-ink bg-oni-pink overflow-hidden py-2">
-      <div class="marquee-track font-display text-white text-lg tracking-wide">
+    <div class="border-y-[3px] border-oni-ink bg-oni-gold overflow-hidden py-2">
+      <div class="marquee-track font-display text-oni-ink text-lg tracking-wide">
         <span class="px-6">$Onigiri ✦ Rescued by chance ✦ Loved forever ✦ Shy tsundere ✦ Big brother Ginan ✦ Adopted 2018 ✦ Born Sept. 15 ✦ Solana cat ✦</span>
         <span class="px-6">$Onigiri ✦ Rescued by chance ✦ Loved forever ✦ Shy tsundere ✦ Big brother Ginan ✦ Adopted 2018 ✦ Born Sept. 15 ✦ Solana cat ✦</span>
       </div>
@@ -259,12 +259,12 @@
 
   <!-- About -->
   <section id="about" class="relative py-20 md:py-28 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-oni-blush via-oni-soft to-oni-blush"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-oni-cream via-oni-butter to-oni-cream"></div>
     <div class="absolute top-10 right-0 w-40 h-40 checkered opacity-20 rotate-12"></div>
     <div class="relative max-w-6xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
         <div class="relative flex justify-center">
-          <div class="absolute inset-0 m-auto w-64 h-64 bg-oni-pink/25 blob animate-float"></div>
+          <div class="absolute inset-0 m-auto w-64 h-64 bg-oni-gold/25 blob animate-float"></div>
           <img
             src="logo.png"
             alt="Onigiri the tuxedo cat"
@@ -273,23 +273,23 @@
           <span class="absolute -top-2 -right-2 md:right-8 text-4xl animate-bounce-soft" aria-hidden="true">🍙</span>
         </div>
         <div>
-          <p class="font-display text-oni-pink text-lg mb-2">Meet the cat</p>
+          <p class="font-display text-oni-gold text-lg mb-2">Meet the cat</p>
           <h2 class="font-display text-4xl sm:text-5xl text-oni-ink leading-tight mb-5">
             Rescued by chance,<br />
-            <span class="text-oni-pink stroke-text">loved forever.</span>
+            <span class="text-oni-gold stroke-text">loved forever.</span>
           </h2>
           <p class="text-lg text-oni-ink leading-relaxed mb-4">
             Adopted in 2018, born Sept. 15 — a shy tsundere with a cute voice who adores big brother Ginan.
           </p>
           <p class="text-base text-oni-ink/90 leading-relaxed">
             That little white triangle on her face? Pure onigiri energy. Now she’s hopping onto Solana as
-            <span class="font-semibold text-oni-pink">$Onigiri</span> — soft paws, loud memes, forever love.
+            <span class="font-semibold text-oni-gold">$Onigiri</span> — soft paws, loud memes, forever love.
           </p>
           <div class="mt-6 flex flex-wrap gap-3">
             <span class="px-3 py-1.5 comic-border bg-white shadow-pop text-sm font-medium">🎂 Sept. 15</span>
-            <span class="px-3 py-1.5 comic-border bg-oni-soft shadow-pop text-sm font-medium">🏠 Adopted 2018</span>
+            <span class="px-3 py-1.5 comic-border bg-oni-butter shadow-pop text-sm font-medium">🏠 Adopted 2018</span>
             <span class="px-3 py-1.5 comic-border bg-white shadow-pop text-sm font-medium">😼 Tsundere</span>
-            <span class="px-3 py-1.5 comic-border bg-oni-soft shadow-pop text-sm font-medium">👬 Loves Ginan</span>
+            <span class="px-3 py-1.5 comic-border bg-oni-butter shadow-pop text-sm font-medium">👬 Loves Ginan</span>
           </div>
         </div>
       </div>
@@ -297,22 +297,22 @@
   </section>
 
   <!-- How to Buy -->
-  <section id="howto" class="relative py-20 md:py-28 bg-oni-blush overflow-hidden">
+  <section id="howto" class="relative py-20 md:py-28 bg-oni-wheat overflow-hidden">
     <div class="absolute -left-10 top-20 w-32 h-32 checkered opacity-25 -rotate-6"></div>
     <div class="absolute right-8 bottom-16 text-6xl opacity-20 animate-wiggle" aria-hidden="true">🐱</div>
 
     <div class="relative max-w-6xl mx-auto px-4">
       <div class="text-center mb-14">
-        <p class="font-display text-oni-pink text-lg mb-2">4 easy steps</p>
+        <p class="font-display text-oni-gold text-lg mb-2">4 easy steps</p>
         <h2 class="font-display text-4xl sm:text-5xl text-oni-ink">
-          How to Buy <span class="text-oni-pink stroke-text">$Onigiri</span>
+          How to Buy <span class="text-oni-gold stroke-text">$Onigiri</span>
         </h2>
         <p class="mt-3 text-oni-ink/90 max-w-md mx-auto">Grab some SOL and scoop this shy rice-ball cat on Solana.</p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <article class="relative bg-white comic-border shadow-pop rounded-2xl p-6 hover:-translate-y-1 transition-transform">
-          <div class="step-num absolute -top-4 -left-3 w-10 h-10 rounded-full bg-oni-pink text-white comic-border flex items-center justify-center text-xl shadow-pop">1</div>
+          <div class="step-num absolute -top-4 -left-3 w-10 h-10 rounded-full bg-oni-gold text-oni-ink comic-border flex items-center justify-center text-xl shadow-pop">1</div>
           <div class="text-4xl mb-4" aria-hidden="true">👛</div>
           <h3 class="font-display text-xl mb-2">Get a Wallet</h3>
           <p class="text-sm text-oni-ink leading-relaxed">
@@ -321,7 +321,7 @@
         </article>
 
         <article class="relative bg-white comic-border shadow-pop rounded-2xl p-6 hover:-translate-y-1 transition-transform">
-          <div class="step-num absolute -top-4 -left-3 w-10 h-10 rounded-full bg-oni-pink text-white comic-border flex items-center justify-center text-xl shadow-pop">2</div>
+          <div class="step-num absolute -top-4 -left-3 w-10 h-10 rounded-full bg-oni-gold text-oni-ink comic-border flex items-center justify-center text-xl shadow-pop">2</div>
           <div class="text-4xl mb-4" aria-hidden="true">◎</div>
           <h3 class="font-display text-xl mb-2">Fund with SOL</h3>
           <p class="text-sm text-oni-ink leading-relaxed">
@@ -330,16 +330,16 @@
         </article>
 
         <article class="relative bg-white comic-border shadow-pop rounded-2xl p-6 hover:-translate-y-1 transition-transform">
-          <div class="step-num absolute -top-4 -left-3 w-10 h-10 rounded-full bg-oni-pink text-white comic-border flex items-center justify-center text-xl shadow-pop">3</div>
+          <div class="step-num absolute -top-4 -left-3 w-10 h-10 rounded-full bg-oni-gold text-oni-ink comic-border flex items-center justify-center text-xl shadow-pop">3</div>
           <div class="text-4xl mb-4" aria-hidden="true">🔗</div>
           <h3 class="font-display text-xl mb-2">Open the Swap</h3>
           <p class="text-sm text-oni-ink leading-relaxed">
-            Hit <span class="font-semibold text-oni-pink">Buy Now</span> to open PumpSwap with SOL → $Onigiri, or paste the CA yourself.
+            Hit <span class="font-semibold text-oni-gold">Buy Now</span> to open PumpSwap with SOL → $Onigiri, or paste the CA yourself.
           </p>
         </article>
 
         <article class="relative bg-white comic-border shadow-pop rounded-2xl p-6 hover:-translate-y-1 transition-transform">
-          <div class="step-num absolute -top-4 -left-3 w-10 h-10 rounded-full bg-oni-pink text-white comic-border flex items-center justify-center text-xl shadow-pop">4</div>
+          <div class="step-num absolute -top-4 -left-3 w-10 h-10 rounded-full bg-oni-gold text-oni-ink comic-border flex items-center justify-center text-xl shadow-pop">4</div>
           <div class="text-4xl mb-4" aria-hidden="true">🍙</div>
           <h3 class="font-display text-xl mb-2">Swap & HODL</h3>
           <p class="text-sm text-oni-ink leading-relaxed">
@@ -350,29 +350,32 @@
 
       <div class="mt-12 flex flex-wrap justify-center gap-4">
         <a
-          href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA"
+          href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=5uVwVUvzXsYP9Cc1sjRgVJE1zX3xfi3pArJNg9RNpump"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-8 py-3.5 bg-oni-pink text-white font-display text-xl comic-border shadow-pop hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
+          class="inline-flex items-center gap-2 px-8 py-3.5 bg-oni-gold text-oni-ink font-display text-xl comic-border shadow-pop hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
         >
           Buy $Onigiri Now
         </a>
         <button
           type="button"
           id="copy-ca-howto"
-          class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-oni-ink font-display text-xl comic-border shadow-pink hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
+          class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-oni-ink font-display text-xl comic-border shadow-gold hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all"
+        >
+          Copy CA
+        </button>
       </div>
     </div>
   </section>
 
   <!-- Chart / Dexscreener embed -->
   <section id="chart" class="relative py-20 md:py-28 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-oni-soft via-oni-blush to-oni-soft"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-oni-butter via-oni-cream to-oni-butter"></div>
     <div class="relative max-w-6xl mx-auto px-4">
       <div class="text-center mb-10">
-        <p class="font-display text-oni-pink text-lg mb-2">Live market</p>
+        <p class="font-display text-oni-gold text-lg mb-2">Live market</p>
         <h2 class="font-display text-4xl sm:text-5xl text-oni-ink">
-          $Onigiri <span class="text-oni-pink stroke-text">Chart</span>
+          $Onigiri <span class="text-oni-gold stroke-text">Chart</span>
         </h2>
         <p class="mt-3 text-oni-ink/90">Track the rice-ball cat on DexScreener.</p>
       </div>
@@ -381,7 +384,7 @@
         <iframe
           id="dex-embed"
           title="DexScreener $Onigiri chart"
-          src="https://dexscreener.com/solana/TBA?embed=1&theme=light&trades=0&info=0"
+          src="https://dexscreener.com/solana/5uVwVUvzXsYP9Cc1sjRgVJE1zX3xfi3pArJNg9RNpump?embed=1&theme=light&trades=0&info=0"
           class="w-full h-[480px] md:h-[620px] border-0"
           loading="lazy"
           allow="clipboard-write"
@@ -390,10 +393,10 @@
 
       <div class="mt-6 text-center">
         <a
-          href="https://dexscreener.com/solana/TBA"
+          href="https://dexscreener.com/solana/5uVwVUvzXsYP9Cc1sjRgVJE1zX3xfi3pArJNg9RNpump"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 font-display text-oni-pink hover:underline text-lg"
+          class="inline-flex items-center gap-2 font-display text-oni-gold hover:underline text-lg"
         >
           Open full chart on DexScreener →
         </a>
@@ -402,14 +405,14 @@
   </section>
 
   <!-- Community CTA -->
-  <section class="py-16 md:py-20 bg-oni-pink border-y-[3px] border-oni-ink relative overflow-hidden">
+  <section class="py-16 md:py-20 bg-oni-gold border-y-[3px] border-oni-ink relative overflow-hidden">
     <span class="absolute left-6 top-6 text-3xl opacity-40 animate-sparkle" aria-hidden="true">🐾</span>
     <span class="absolute right-10 bottom-8 text-4xl opacity-40 animate-float" aria-hidden="true">✨</span>
-    <div class="max-w-3xl mx-auto px-4 text-center text-white">
-      <h2 class="font-display text-3xl sm:text-5xl stroke-text mb-4" style="-webkit-text-stroke-color: #1A1A1A;">
+    <div class="max-w-3xl mx-auto px-4 text-center text-oni-ink">
+      <h2 class="font-display text-3xl sm:text-5xl text-oni-butter stroke-text mb-4">
         Join the Onigiri fam
       </h2>
-      <p class="text-white text-lg mb-8 font-medium">
+      <p class="text-oni-ink text-lg mb-8 font-medium">
         Soft meows, big memes — come hang with the shy tsundere on Telegram & X.
       </p>
       <div class="flex flex-wrap justify-center gap-5">
@@ -441,7 +444,7 @@
       <div class="flex items-center gap-3">
         <img src="logo.png" alt="" class="w-12 h-12 rounded-full comic-border object-cover border-white" />
         <div>
-          <p class="font-display text-xl text-oni-pink">Onigiri</p>
+          <p class="font-display text-xl text-oni-gold">Onigiri</p>
           <p class="text-xs text-white/80">$Onigiri · Solana</p>
         </div>
       </div>
@@ -453,7 +456,7 @@
 
   <script>
     (function () {
-      const CA = 'TBA';
+      const CA = '5uVwVUvzXsYP9Cc1sjRgVJE1zX3xfi3pArJNg9RNpump';
 
       function copyCA() {
         const toast = document.getElementById('copy-toast');
